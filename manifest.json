@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "DevManager",
+    "version": "1.0.0",
+    "description": "GitLab + Clockify project manager with Pomodoro",
+    "action": {
+        "default_title": "DevManager"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "notifications",
+        "alarms",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://api.clockify.me/*",
+        "https://cdn.jsdelivr.net/*",
+        "https://code.jquery.com/*",
+        "https://cdnjs.cloudflare.com/*",
+        "https://gitlab.com/*",
+        "https://ui-avatars.com/*"
+    ],
+    "icons": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "128": "icons/icon-128.png"
+    }
+}
